@@ -1,0 +1,6 @@
+{
+  "name": "Pulse Horizon - Influencer & Talent Intelligence",
+  "description": "Executive creator intelligence dashboard, multi-platform discovery, valuation index, campaign fit scoring, and talent shortlist management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
