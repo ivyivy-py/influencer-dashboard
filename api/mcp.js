@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     return new Response(null, { status: 200 });
   }
 
-  const apiKey = process.env.SMITHERY_API_KEY || process.env['smithery-mcp-key'] || process.env.SMITHERY_MCP_KEY;
+  const apiKey = process.env.SMITHERY_API_KEY || process.env.INFLUSHIP_API_KEY || process.env['smithery-mcp-key'] || process.env.SMITHERY_MCP_KEY;
   const endpoint = process.env.SMITHERY_MCP_ENDPOINT || 'https://server.smithery.ai/influship/influship-mcp';
 
   let body = {};

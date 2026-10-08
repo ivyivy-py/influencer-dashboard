@@ -19,7 +19,7 @@ export default async function handler(req, res) {
   }
 
   const startTime = Date.now();
-  const rawKey = process.env.SMITHERY_API_KEY || process.env['smithery-mcp-key'] || process.env.SMITHERY_MCP_KEY || '';
+  const rawKey = process.env.SMITHERY_API_KEY || process.env.INFLUSHIP_API_KEY || process.env['smithery-mcp-key'] || process.env.SMITHERY_MCP_KEY || '';
   const hasKey = Boolean(rawKey && rawKey.trim());
   const smitheryEndpoint = process.env.SMITHERY_MCP_ENDPOINT || 'https://server.smithery.ai/influship/influship-mcp';
 
