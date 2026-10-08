@@ -79,5 +79,13 @@ Architecture: React SPA (Vite) + Vercel /api/*.js Serverless Architecture
 [PHASE 6: COMPILATION & VERIFICATION]
 ✓ compile_applet: PASSED (0 errors)
 ✓ lint_applet: PASSED (0 errors)
+
+[PHASE 7: LIVE MCP MONITORING ENHANCEMENT]
+✓ Upgraded /api/health.js:
+  - Added live HTTP network probe to https://server.smithery.ai/influship/influship-mcp with timeout guard
+  - Measures real-time roundtrip latency (ms) and captures HTTP status code
+  - Evaluates mcp.running (true/false) and mcp.status (HEALTHY_AUTHENTICATED, RUNNING_AUTH_REQUIRED, etc.)
+  - Verifies presence and masking of SMITHERY_API_KEY
+  - Dual presentation: returns structured JSON for monitoring tools/APIs + rich dark-mode Pulse Horizon HTML dashboard for direct browser inspection
 ✓ Status: All systems green. Production-ready for Vercel & AI Studio deployment.
 ================================================================================
